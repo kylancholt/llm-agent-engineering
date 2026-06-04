@@ -17,10 +17,10 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Callable
 
-# Allow direct execution: python tests/test_failure_modes.py
-sys.path.insert(0, str(Path(__file__).parent.parent))
+# Allow direct execution from any working directory: python ch01_why_agents_break/test_failure_modes.py
+sys.path.insert(0, str(Path(__file__).parent))
 
-from agents.diagnostics.failure_modes import AgentFailureType, FailureModeClassifier
+from failure_modes import AgentFailureType, FailureModeClassifier
 
 
 # ------------------------------------------------------------------
