@@ -32,8 +32,8 @@ from typing import Any, Callable
 
 import anthropic
 
-# ── project root: agents/core/../../ = root ───────────────────────────────────
-_ROOT = Path(__file__).resolve().parents[2]
+# ── project root: ch03_agent_loop/../ = root ─────────────────────────────────
+_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(_ROOT))
 
 from ch01_why_agents_break.cost_tracker import AgentCostTracker, AlertLevel

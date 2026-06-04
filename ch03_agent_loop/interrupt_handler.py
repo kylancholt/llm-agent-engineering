@@ -35,11 +35,11 @@ from enum import Enum
 from pathlib import Path
 from typing import Any, Callable
 
-# ── project root ──────────────────────────────────────────────────────────────
-_ROOT = Path(__file__).resolve().parents[2]
+# ── project root: ch03_agent_loop/../ = root ─────────────────────────────────
+_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(_ROOT))
 
-from agents.core.agent_state import AgentState
+from ch03_agent_loop.agent_state import AgentState
 
 
 # ── public enums ──────────────────────────────────────────────────────────────
