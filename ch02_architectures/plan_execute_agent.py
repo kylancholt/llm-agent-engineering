@@ -21,12 +21,12 @@ from typing import Any, Callable
 
 import anthropic
 
-# ── sys.path: project root → ch01_why_agents_break + agents/ visible ─────────
-_ROOT = Path(__file__).resolve().parents[2]
+# ── sys.path: project root → ch01_why_agents_break + ch02_architectures/ visible
+_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(_ROOT))
 
 from ch01_why_agents_break.cost_tracker import AgentCostTracker, AlertLevel
-from agents.architectures.react_agent import (   # shared result type + demo tools
+from ch02_architectures.react_agent import (   # shared result type + demo tools
     AgentResult,
     web_search,
     calculator,

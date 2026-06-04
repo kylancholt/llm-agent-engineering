@@ -23,8 +23,8 @@ from typing import Any, Callable
 import anthropic
 
 # ── project root on sys.path ──────────────────────────────────────────────────
-# parents[0] = agents/architectures/  parents[1] = agents/  parents[2] = root
-_ROOT = Path(__file__).resolve().parents[2]
+# parents[0] = ch02_architectures/  parents[1] = project root
+_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(_ROOT))
 
 from ch01_why_agents_break.cost_tracker import AgentCostTracker, AlertLevel
