@@ -35,7 +35,7 @@ except ModuleNotFoundError:
     import streamlit as st
     import pandas as pd
 
-_ROOT = Path(__file__).resolve().parents[2]
+_ROOT = Path(__file__).resolve().parents[1]
 _TRACES_DIR = _ROOT / "traces"
 
 # ── Data loading ──────────────────────────────────────────────────────────────
