@@ -39,8 +39,8 @@ from typing import Any
 
 import anthropic
 
-# ── project root: orchestration/multi_agent/../../ = root ───────────────────────
-_ROOT = Path(__file__).resolve().parents[2]
+# ── project root: ch08_multi_agent/.. = root ────────────────────────────────────
+_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(_ROOT))
 
 from ch01_why_agents_break.cost_tracker import AgentCostTracker, AlertLevel
